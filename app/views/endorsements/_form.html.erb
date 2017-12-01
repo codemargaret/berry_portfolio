@@ -1,0 +1,11 @@
+<%= render "layouts/errors", :object => @endorsement %>
+
+<%= form_for [@skill, @endorsement] do |f| %>
+  <div class="form-group">
+    <%= f.label :body %>
+    <%= f.text_field :body, :class => "form-control" %>
+  </div>
+  <%= f.hidden_field(:user_id, :value => current_user.id) %>
+  <%= f.hidden_field(:skill_id, :value => @skill.id) %>
+  <%= f.button :Submit, :class => 'btn btn-info' %>
+<% end %>

@@ -1,0 +1,6 @@
+<% if current_user %>
+  <h2>Edit endorsement</h2>
+  <%= render "form" %>
+<% else %>
+  <h2>Please log in to edit endorsements</h2>
+<% end %>
