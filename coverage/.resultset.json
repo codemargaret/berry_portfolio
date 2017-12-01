@@ -793,7 +793,21 @@
         1,
         null,
         1,
+        2,
+        2,
+        2,
+        null,
+        null,
         1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
         null
       ],
       "/Users/margaretmcgovern/Desktop/projects/berry_portfolio/spec/models/skill_spec.rb": [
@@ -823,6 +837,6 @@
         null
       ]
     },
-    "timestamp": 1512159809
+    "timestamp": 1512160012
   }
 }
