@@ -1,0 +1,27 @@
+
+<h3>Skill: <%= @skill.description %></h3>
+<h3>Example: <%= @skill.example %></h3>
+
+<!-- <% if @endorsements.any? %>
+  <h3>Endorsements:</h3>
+  <% @endorsements.each do |endorsement| %>
+    <div class="row">
+      <div class="col sm-4">
+        <div class="card">
+          <div class="card-block">
+            <h4>Author: <%= endorsement.user.username %></h4>
+            <h5>Posted: <%= endorsement.created_at.to_formatted_s(:long_ordinal) %></h5>
+            <p><%= endorsement.body %></p>
+            <% if current_user && current_user.id === @user.id %>
+              <p><%= link_to('Edit', edit_skill_endorsement_path(@skill, endorsement))  %> |
+              <%= link_to "Delete", skill_endorsement_path(@skill, endorsement),
+               :data => {:confirm => "You sure?",
+               :method => "delete"} %>
+             </p>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div><br>
+  <% end %>
+<% end %> -->

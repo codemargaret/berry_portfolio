@@ -1,1 +1,18 @@
 <h1>TEST</h1>
+
+<h1>About Margaret</h1>
+<p>Margaret's life journey has taken her from the east coast to the west, and from teaching to coding. Her life has a great soundtrack and she's happy as long as she's learning.</p>
+
+<h3>Margaret's Skills</h3>
+<p>Click a skill to see examples and endorsements of that skill.</p>
+<% @skills.each do |skill| %>
+  <div class="row">
+    <div class="col sm-4">
+      <div class="card">
+        <div class="card-block">
+        <h3><%= link_to skill.description, skill_path(skill) %></h3>
+        </div>
+      </div>
+    </div>
+  </div><br>
+<% end %>
