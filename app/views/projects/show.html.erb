@@ -1,0 +1,27 @@
+<h3>Project Title: <%= @project.title %></h3>
+<h3>Url: <%= @project.link %></h3>
+<h3>Description: <%= @project.description %></h3>
+
+<!-- <% if @comments.any? %>
+  <h3>Endorsements:</h3>
+  <% @comments.each do |comment| %>
+    <div class="row">
+      <div class="col sm-4">
+        <div class="card">
+          <div class="card-block">
+            <h4>Author: <%= comment.user.username %></h4>
+            <h5>Posted: <%= comment.created_at.to_formatted_s(:long_ordinal) %></h5>
+            <p><%= comment.body %></p>
+            <% if current_user && current_user.id === @user.id %>
+              <p><%= link_to('Edit', edit_project_comment_path(@project, comment))  %> |
+              <%= link_to "Delete", project_comment_path(@project, comment),
+               :data => {:confirm => "You sure?",
+               :method => "delete"} %>
+             </p>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div><br>
+  <% end %>
+<% end %> -->

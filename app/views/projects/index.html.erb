@@ -1,0 +1,22 @@
+<h3>Margaret's Projects</h3>
+
+<p>Click a project to see more info and comments.</p>
+<% @projects.each do |project| %>
+  <div class="row">
+    <div class="col sm-4">
+      <div class="card">
+        <div class="card-block">
+        <h3><%= link_to project.title, project_path(project) %></h3>
+        <% if current_user && current_user.admin %>
+          <%= link_to 'Edit project', edit_project_path(project) %>
+          <%= link_to 'Delete project', edit_project_path(project) %>
+        <% end %>
+        </div>
+      </div>
+    </div>
+  </div><br>
+<% end %>
+
+<% if current_user && current_user.admin %>
+  <%= link_to 'Add a project', new_project_path %>
+<% end %>
