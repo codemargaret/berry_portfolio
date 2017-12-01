@@ -3,7 +3,7 @@ class User < ApplicationRecord
   has_many :endorsements
 
   validates :email, :presence => true
-  validates :email, :uniqueness => true
+  validates :email, :uniqueness => true, :case_sensitive => false
 
   validates :username, :presence => true
   validates :username, :uniqueness => true
