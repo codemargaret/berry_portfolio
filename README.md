@@ -1,6 +1,6 @@
 # Margaret Berry Portfolio
 
-#### _A portfolio showcasing my projects and strengths, 11.03.2017_
+#### _A portfolio showcasing my projects and strengths, 12.01.2017_
 
 #### By _Margaret Berry_
 
@@ -18,6 +18,7 @@ _You can view a deployed version [here]:_
 4. `$ rails db:create`
 5. `$ rails db:migrate`
 6. `$ rails db:test:prepare` _if running tests._
+6. `$ rails s` _to run locally._
 
 ## My Personal Strengths
 * _I use the power of sparkles to make the world a shinier place._
@@ -29,8 +30,17 @@ _You can view a deployed version [here]:_
 ## User Stories
 * _A user can..._
 * _Contact me._
-* _View my projects._
 * _Learn more about me._
+* _View my projects._
+* _Comment on my projects._
+* _View my skills._
+* _Endorse my skills._
+
+* _An administrator can..._
+* _Create, update, and delete projects._
+* _Create, update, and delete comments._
+* _Create, update, and delete skills._
+* _Create, update, and delete endorsements._
 
 ## Specifications
 
