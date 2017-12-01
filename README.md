@@ -19,8 +19,12 @@ _You can view a deployed version [here]:_
 5. `$ rails db:migrate`
 6. `$ rails db:test:prepare` _if running tests._
 
-## My Strengths
-* _I love sparkles._
+## My Personal Strengths
+* _I use the power of sparkles to make the world a shinier place._
+* _I am able to focus intently on projects, so much so that I am often startled by people who have been standing next to me for several minutes._
+* _I stand up for myself, but handle conflict in a diplomatic way._
+* _I can often channel my anxiety into careful work._
+* _Although I tend towards introversion, I genuinely enjoy getting to know people._
 
 ## User Stories
 * _A user can..._
