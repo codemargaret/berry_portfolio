@@ -1,6 +1,5 @@
-<h1>TEST</h1>
+<h3>About Margaret</h3>
 
-<h1>About Margaret</h1>
 <p>Margaret's life journey has taken her from the east coast to the west, and from teaching to coding. Her life has a great soundtrack and she's happy as long as she's learning.</p>
 
 <h3>Margaret's Skills</h3>
@@ -11,8 +10,16 @@
       <div class="card">
         <div class="card-block">
         <h3><%= link_to skill.description, skill_path(skill) %></h3>
+        <% if current_user && current_user.admin %>
+          <%= link_to 'Edit skill', edit_skill_path(skill) %>
+          <%= link_to 'Delete skill', edit_skill_path(skill) %>
+        <% end %>
         </div>
       </div>
     </div>
   </div><br>
+<% end %>
+
+<% if current_user && current_user.admin %>
+  <%= link_to 'Add a skill', new_skill_path %>
 <% end %>
