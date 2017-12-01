@@ -12,5 +12,10 @@ class SkillsController < ApplicationController
   def show
     @skill = Skill.find(params[:id])
     @endorsements = @skill.endorsements
+    if current_user
+      @user = current_user
+    else
+      @user = 'none'
+    end
   end
 end

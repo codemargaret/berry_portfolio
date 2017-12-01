@@ -12,5 +12,10 @@ class ProjectsController < ApplicationController
   def show
     @project = Project.find(params[:id])
     @comments = @project.comments
+    if current_user
+      @user = current_user
+    else
+      @user = 'none'
+    end
   end
 end
