@@ -42,7 +42,8 @@ _You can view a deployed version [here]:_
 * _Create, update, and delete skills._
 * _Create, update, and delete endorsements._
 
-## Specifications
+## Future Features
+* _More styling._
 
 ## Bugs
 _There are no known bugs at this time._
