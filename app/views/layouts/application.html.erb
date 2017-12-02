@@ -16,18 +16,18 @@
         <ul><%= link_to('Edit User', edit_user_registration_path) %></ul>
       <% end %>
       <ul><%= link_to('Projects', projects_path) %></ul>
+      <ul><%= link_to('Skills', skills_path) %></ul>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          </li>
         </ul>
-
         <% if current_user %>
-        <%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+          <ul><%= link_to('Logout', destroy_user_session_path, method: :delete) %></ul>
         <% else %>
-        <h5><%= link_to('Login', new_user_session_path)  %> <%= link_to('Register', new_user_registration_path)  %></h5>
+          <ul><%= link_to('Login', new_user_session_path) %></ul>
+          <ul><%= link_to('Register', new_user_registration_path) %></ul>
         <% end %>
       </div>
     </nav>
@@ -45,5 +45,16 @@
        <% end %>
       <%= yield %>
     </div>
+    <nav id='footer' class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+      <ul>Contact Margaret:</ul>
+      <ul><a href="mailto:codeberry1@gmail.com" target="_top">Email</a></ul>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+        </ul>
+      </div>
+    </nav>
   </body>
 </html>
