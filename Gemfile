@@ -17,8 +17,8 @@ gem 'bootstrap', '~> 4.0.0.beta2.1'
 gem 'jquery-rails'
 gem 'faker'
 gem 'devise', '~> 4.3'
-gem "paperclip", "~> 5.0.0"
-gem 'rails_admin', '~> 1.2'
+gem "paperclip", "~> 5.2.0"
+gem 'rails_admin', '~> 1.3.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
